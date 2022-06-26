@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true" class="ion-margin-vertical">
+  <ion-text>
+    <h3>Hello {{user?.firstName}}</h3>
+  </ion-text>
+  <ion-card class="ion-no-margin ion-no-padding">
+    <ion-card-content>
+      <app-owl-carousel></app-owl-carousel>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size-xl="8">
+        <div *ngFor="let item of [].constructor(4);">
+          <ion-avatar style="height: 300px; width: 300px; margin: 10px auto;border-radius: 30px;">
+            <ion-img alt="YK" src="assets/images/landingPage-background.png" class=""></ion-img>
+          </ion-avatar>
+        </div>
+
+      </ion-col>
+
+      <ion-col class="ion-hide-md-down">
+                    <ion-img alt="YK" src="assets/images/landingPage-background.png" class=""></ion-img>
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+</ion-content>

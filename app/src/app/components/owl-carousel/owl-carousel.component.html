@@ -1,0 +1,10 @@
+<div id="main">
+  <ion-grid class="featured">
+    <ion-row class="feature" *ngFor="let item of [].constructor(50); let i=index">
+      <ion-icon name="{{like ? 'heart-circle' : 'heart-circle-outline'}}" color="danger" size="large" class="date-float" (click)="onLike(i)"></ion-icon>
+      <div>
+        <p><small>CONCERT</small></p>
+      </div>
+    </ion-row>
+  </ion-grid>
+</div>
